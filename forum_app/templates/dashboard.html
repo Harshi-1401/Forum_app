@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Inline CSS for additional styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .post-actions {
+            display: inline-flex;
+            gap: 10px;
+        }
+
+        .logout-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <form method="post" action="{{ url_for('post') }}">
+            <textarea name="content" placeholder="What's on your mind?" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <strong>{{ post.user }}</strong>: {{ post.content }}
+                    <div class="post-actions">
+                        <form method="post" action="{{ url_for('like', post_id=loop.index0) }}" style="display: inline;">
+                            <button type="submit">Like ({{ post.likes }})</button>
+                        </form>
+                        <form method="post" action="{{ url_for('delete', post_id=loop.index0) }}" style="display: inline;">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="logout-link">
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

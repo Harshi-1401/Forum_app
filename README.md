@@ -46,15 +46,27 @@ This is a simple forum application built using Flask, HTML, CSS, and JavaScript.
   - Navigate to http://127.0.0.1:5000
 
 # Folder structure
+
 forum-application/
+
 ├── static/
+
 │   ├── style.css
+
 │   ├── script.js
+
 ├── templates/
+
 │   ├── base.html
+
 │   ├── register.html
+
 │   ├── login.html
+
 │   ├── dashboard.html
+
 ├── app.py
+
 ├── requirements.txt
+
 ├── README.md

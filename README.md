@@ -64,4 +64,5 @@ forum-application/
 │   ├── dashboard.html
 
 ├── app.py
+
 ├── README.md

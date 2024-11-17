@@ -53,11 +53,9 @@ forum-application/
 
 │   ├── style.css
 
-│   ├── script.js
-
 ├── templates/
 
-│   ├── base.html
+│   ├── home.html
 
 │   ├── register.html
 
@@ -66,7 +64,4 @@ forum-application/
 │   ├── dashboard.html
 
 ├── app.py
-
-├── requirements.txt
-
 ├── README.md

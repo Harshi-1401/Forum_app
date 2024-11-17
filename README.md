@@ -2,7 +2,7 @@
 This is a simple forum application built using Flask, HTML, CSS, and JavaScript. It allows users to register, log in, and interact with the platform. Users can also update their profiles and like posts, with each user restricted to liking a post only once.
 
 # Features
-User Registration: New users can register with their credentials.
+- User Registration: New users can register with their credentials.
 User Login: Registered users can log in securely.
 Dashboard: A central hub for users after logging in.
 Like Feature: Users can like posts, with a restriction of one like per post per user.

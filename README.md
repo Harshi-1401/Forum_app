@@ -28,10 +28,10 @@ This is a simple forum application built using Flask, HTML, CSS, and JavaScript.
 
 # Installation and Setup
 1.**Clone the repository**:
-\\\bash
+  '''bash
 git clone https://github.com/your-username/forum-application.git
 cd forum-application
-///
+  '''
 2.**Create a virtual environment**:
 '''bash
 python -m venv venv

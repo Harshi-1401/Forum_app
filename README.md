@@ -28,31 +28,27 @@ This is a simple forum application built using Flask, HTML, CSS, and JavaScript.
 
 # Installation and Setup
 1.**Clone the repository**:
-bash
-'''
+## Setup
+'''bash
 git clone https://github.com/your-username/forum-application.git
 cd forum-application
 '''
 2.**Create a virtual environment**:
-bash
-'''
+'''bash
 python -m venv venv
 source venv/bin/activate    # On Linux/Mac
 venv\Scripts\activate       # On Windows
 '''
 3.**Install dependencies**:
-bash
-'''
+'''bash
 pip install -r requirements.txt
 '''
 4.**Run the application**:
-bash
-'''
+'''bash
 flask run
 '''
 5.**Access the application in your browser**:
-bash
-'''
+'''bash
 Navigate to http://127.0.0.1:5000
 '''
 
